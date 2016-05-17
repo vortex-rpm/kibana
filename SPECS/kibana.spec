@@ -1,5 +1,5 @@
 Name:           kibana
-Version:        4.16
+Version:        4.1.6
 Release:        1.vortex%{?dist}
 Summary:        open source data visualization platform
 

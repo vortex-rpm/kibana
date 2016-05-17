@@ -29,7 +29,11 @@ data far and wide.
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/opt
-install -d -D -m 0755 ../%{name}-%{version}-linux-x64 $RPM_BUILD_ROOT/opt/%{name}
+install -d -D -m 0755 bin $RPM_BUILD_ROOT/opt/%{name}/bin
+install -d -D -m 0755 config $RPM_BUILD_ROOT/opt/%{name}/config
+install -d -D -m 0755 node $RPM_BUILD_ROOT/opt/%{name}/node
+install -d -D -m 0755 plugins $RPM_BUILD_ROOT/opt/%{name}/plugins
+install -d -D -m 0755 src $RPM_BUILD_ROOT/opt/%{name}/src
 install -D -m 0755 %{SOURCE3} $RPM_BUILD_ROOT/%{_initddir}/%{name}
 
 

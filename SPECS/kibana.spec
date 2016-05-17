@@ -29,7 +29,7 @@ data far and wide.
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/opt
-install -D -m 0755 ../%{name}-%{version}-linux-x64 $RPM_BUILD_ROOT/opt/%{name}
+install -d -D -m 0755 ../%{name}-%{version}-linux-x64 $RPM_BUILD_ROOT/opt/%{name}
 install -D -m 0755 %{SOURCE3} $RPM_BUILD_ROOT/%{_initddir}/%{name}
 
 
